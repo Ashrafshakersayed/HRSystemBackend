@@ -11,8 +11,6 @@ namespace HR_Employees.Entities
         public DateTime? SignoutTime { get; set; }
         public TimeSpan? WorkingHours { get; set; }
 
-
-        //public float? WorkingHoursInt { get; set; } 
         public int EmployeeID { get; set; }
         public Employee Employee { get; set; }
 

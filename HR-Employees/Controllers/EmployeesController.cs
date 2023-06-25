@@ -8,11 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using HR_Employees.Entities;
 using HR_Employees.Dtos;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HR_Employees.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController, Authorize]
     public class EmployeesController : ControllerBase
     {
         private readonly DBContext _context;

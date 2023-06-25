@@ -12,6 +12,9 @@ using HR_Employees.Entities;
         {
         }
 
+        #region Security
+        public DbSet<User> Users { get; set; } = default!;
+        #endregion
         public DbSet<Employee> Employee { get; set; } = default!;
         public DbSet<WorkingHour> WorkingHours { get; set; } = default!;
     }
